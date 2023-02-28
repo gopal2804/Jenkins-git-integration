@@ -9,9 +9,8 @@ pipeline {
         }
         stage('Build Code') {
             steps {
-                sh "chmod u+x HelloWorld.java"
-                javac "HelloWorld.java"
-                java "HelloWorld"
+                sh "chmod u+x Program.py"
+                sh "./Program.py"
             }
         }
      stage('Test Code') {
